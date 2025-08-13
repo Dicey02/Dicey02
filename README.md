@@ -1,4 +1,4 @@
-# 🎬 TikTok Comment Generator
+UK# 🎬 TikTok Comment Generator
 
 Upload a short video, choose a tone, and get AI-generated TikTok-style comments!
 
@@ -36,3 +36,14 @@ Try it here: [https://tiktok-comment-app.onrender.com](https://tiktok-comment-ap
 ---
 
 ## 📦 Project Structure
+.
+├── main.py
+├── requirements.txt
+├── src/
+│   └── app/
+│       ├── __init__.py
+│       └── routes.py
+└── README.md
+
+
+
