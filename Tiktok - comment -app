@@ -1,0 +1,19 @@
+# Exported from Render on 2025-08-13T22:08:15Z
+services:
+- type: web
+  name: Tiktok-comment-app
+  runtime: python
+  repo: https://github.com/Dicey02/Dicey02
+  plan: free
+  envVars:
+  - key: OPENAIKEY
+    sync: false
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
+  healthCheckPath: '/health '
+  autoDeployTrigger: "off"
+  rootDir: tiktok-comment-app
+  previews:
+    generation: manual
+version: "1"
